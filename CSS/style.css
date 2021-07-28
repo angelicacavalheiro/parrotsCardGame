@@ -1,0 +1,57 @@
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #EEF9BF
+}
+
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.title{
+    background-color: red;
+
+    font-weight: bold;
+    font-size: 56px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+
+    margin-top: 40px;
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: center;
+}
+
+.cartinha{
+    width:117px;
+    height: 146px;
+    border: 1px solid #99CEA8;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    background-image: url("/assets/front.png");
+    background-color: #75B79E;
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+	.cartas {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartinha{
+        display: flex;
+        justify-content: space-between;     
+    }
+    .title {
+      
+    }    
+}
